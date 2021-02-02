@@ -1,8 +1,10 @@
 <?php
-
-$home = 'http://localhost/minishop'. '/acceuil_connexion';
-
-header("Location:" . $home . ".php");
-exit();
-
+	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+		$uri = 'https://';
+	} else {
+		$uri = 'http://';
+	}
+	$uri .= $_SERVER['HTTP_HOST'];
+	header('Location: '.$uri.'/minishop/acceuil_connexion.php');
+	exit;
 ?>
