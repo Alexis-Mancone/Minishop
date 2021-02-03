@@ -9,7 +9,15 @@
 </head>
 
   <body>
-    <form action="/connexion.php">
+    <?php 
+      if (isset($_SESSION['error_message'])) {
+    ?>
+        <div><?php echo $_SESSION['error_message']; ?></div>
+    <?php
+        unset($_SESSION['error_message']);
+      }
+    ?>
+    <form action="../management/connexion.php">
       <div class="container">
         <h1>Connexion</h1>
         <hr>
