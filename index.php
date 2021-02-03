@@ -6,20 +6,14 @@ $extra = 'acceuil_connexion.php';
 header("Location: http://$host$uri/$extra");
 die;
 */
-require_once "php\\init.php";
-
 // check auth
 
+require_once "php\\init.php";
 
-$url = parse_url($_SERVER["REQUEST_URI"]);
-parse_str("p=login",$output);
-var_dump($url);
-var_dump($output['p']);
-
-$page = $output['p'];
+$page = 'home';
 if (isset($_GET['p'])) {
     echo "HOI";
-    if (in_array($_GET['p'], $pages)) {
+    if (in_array($_GET['p'],$pages)){
         $page = $_GET['p'];
     }
     else {
