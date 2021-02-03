@@ -110,3 +110,19 @@ h1{
 blockquote{
     text-align: center;
 }
+
+/*css panier*/
+.command{
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+    transform: translate(0%,-35%);
+    background-color: #181515;
+    color: rgb(210, 210, 210);
+    font-size: 17px;
+    padding: 10px 10px;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+}
