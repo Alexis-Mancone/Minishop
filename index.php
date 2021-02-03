@@ -10,9 +10,13 @@ require_once "php\\init.php";
 
 // check auth
 
-$page = 'home';
-$url = parse_url($_SERVER["QUERY_STRING"]);
+
+$url = parse_url($_SERVER["REQUEST_URI"]);
+parse_str("p=login",$output);
 var_dump($url);
+var_dump($output['p']);
+
+$page = $output['p'];
 if (isset($_GET['p'])) {
     echo "HOI";
     if (in_array($_GET['p'], $pages)) {
