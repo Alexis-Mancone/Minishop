@@ -7,39 +7,48 @@
 </head>
 
 <body>
-<form action="/inscription.php">
+  <?php 
+    if (isset($_SESSION['error_message'])) {
+  ?>
+      <div><?php echo $_SESSION['error_message']; ?></div>
+  <?php
+      unset($_SESSION['error_message']);
+    }
+  ?>
+
+<form action="../management/inscription.php">
   <div class="container">
     <h1>Inscription</h1>
     <p>Merci de vous enregistrer pour vous connecter</p>
     <hr>
 
-    <label for="nom"><b>Nom</b></label>
-    <input type="text" placeholder="Enter Nom" name="nom" id="nom" required>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Name" name="name" id="name" required>
     <hr>
 
-    <label for="prénom"><b>Prénom</b></label>
-    <input type="text" placeholder="Enter Prénom" name="prénom" id="prénom" required>
+    <label for="Firstname"><b>Firstname</b></label>
+    <input type="text" placeholder="Firstname" name="firstname" id="firstname" required>
     <hr>
 
-    <label for="adresse"><b>Adresse</b></label>
-    <input type="text" placeholder="Enter Adresse" name="adresse" id="adresse" required>
+    <label for="adress"><b>Adress</b></label>
+    <input type="text" placeholder="Adress" name="adress" id="adress" required>
     <hr>
 
-    <label for="téléphone"><b>Téléphone</b></label>
-    <input type="text" placeholder="Enter Téléphone" name="téléphone" id="téléphone" required>
+    <label for="phone"><b>Phone number</b></label>
+    <input type="text" placeholder="Phone number" name="phone" id="phone" required>
     <hr>
     
-    <label for="sexe"><b>Sexe</b></label>
-    <input type="text" placeholder="Enter Sexe" name="sexe" id="sexe" required>
+    <label for="sex"><b>Sex</b></label>
+    <input type="text" placeholder="Man/Woman" name="sex" id="sex" required>
     <hr>
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" placeholder="Email" name="email" id="email" required>
     <hr>
-    <label for="pseudo"><b>Pseudo</b></label>
-    <input type="text" placeholder="Enter Pseudo" name="pseudo" id="pseudo" required>
+    <label for="nickname"><b>Username</b></label>
+    <input type="text" placeholder="Username" name="nickname" id="nickname" required>
     <hr>
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Password" name="psw" id="psw" required>
     <hr>
     <button type="submit" class="registerbtn">Inscription</button>
     <p>Vous n'avez pas de compte? <a href="?p=login">Connexion</a>.</p>

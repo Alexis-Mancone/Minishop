@@ -5,7 +5,6 @@
   <head>
     <meta charset="utf-8">  
     <style> <?php include 'css\\style.css' ?> </style>
-    <style> <?php include 'css\\bootstrap.min.css' ?> </style>
     <title>Panier</title>
   </head>
 
