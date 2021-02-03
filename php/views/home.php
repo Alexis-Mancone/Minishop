@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <meta charset="utf-8"/>
-
+<?php require_once "php/init.php";?>
 <style> <?php include 'css\\style.css' ?> </style>
 
 <title>Minishop</title>

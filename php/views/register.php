@@ -16,42 +16,42 @@
     }
   ?>
 
-<form action="../management/inscription.php" method='get'>
+<form action= "php/management/inscription.php">
   <div class="container">
     <h1>Inscription</h1>
     <p>Merci de vous enregistrer pour vous connecter</p>
     <hr>
 
     <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Name" name="name" id="name" required>
+    <input type="text" placeholder="Name" name="name" id="name" >
     <hr>
 
-    <label for="Firstname"><b>Firstname</b></label>
-    <input type="text" placeholder="Firstname" name="firstname" id="firstname" required>
+    <label for="firstname"><b>Firstname</b></label>
+    <input type="text" placeholder="Firstname" name="firstname" id="firstname" >
     <hr>
 
     <label for="adress"><b>Adress</b></label>
-    <input type="text" placeholder="Adress" name="adress" id="adress" required>
+    <input type="text" placeholder="Adress" name="adress" id="adress" >
     <hr>
 
     <label for="phone"><b>Phone number</b></label>
-    <input type="text" placeholder="Phone number" name="phone" id="phone" required>
+    <input type="text" placeholder="Phone number" name="phone" id="phone" >
     <hr>
     
     <label for="sex"><b>Sex</b></label>
-    <input type="text" placeholder="Man/Woman" name="sex" id="sex" required>
+    <input type="text" placeholder="Man/Woman" name="sex" id="sex" >
     <hr>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Email" name="email" id="email" required>
+    <input type="text" placeholder="Email" name="email" id="email" >
     <hr>
 
     <label for="nickname"><b>Username</b></label>
-    <input type="text" placeholder="Username" name="nickname" id="nickname" required>
+    <input type="text" placeholder="Username" name="nickname" id="nickname" >
     <hr>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Password" name="psw" id="psw" >
     <hr>
     
     <input type="submit" class="registerbtn" value = "Inscription">
