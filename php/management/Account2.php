@@ -8,8 +8,8 @@ class Account {
         "created" => ""
     ];
 
-    function __construct() {
-
+    function __construct(){
+        
     }
 
     // function magique appelée a chaque `this->xx` | $name = xx

@@ -41,15 +41,19 @@
     <label for="sex"><b>Sex</b></label>
     <input type="text" placeholder="Man/Woman" name="sex" id="sex" required>
     <hr>
+
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Email" name="email" id="email" required>
     <hr>
+
     <label for="nickname"><b>Username</b></label>
     <input type="text" placeholder="Username" name="nickname" id="nickname" required>
     <hr>
+
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Password" name="psw" id="psw" required>
     <hr>
+    
     <button type="submit" class="registerbtn">Inscription</button>
     <p>Vous n'avez pas de compte? <a href="?p=login">Connexion</a>.</p>
   </div>
