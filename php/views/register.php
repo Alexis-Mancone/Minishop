@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>inscription</title>
   <style> <?php include 'css\\style.css' ?> </style>
+  <style> <?php include 'css\\bootstrap.min.css' ?> </style>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 
     <hr>
 
-    <button type="submit" class="registerbtn">inscription</button>
+    <button type="submit" class="registerbtn">Inscription</button>
   </div>
   
   <div class="container signin">
@@ -40,7 +41,7 @@
 
 <!-- deconnexion -->
 <?php 
-session_start();
+/*session_start();
 
 // Suppression des variables de session et de la session
 $_SESSION = array();
@@ -48,5 +49,5 @@ session_destroy();
 
 // Suppression des cookies de connexion automatique
 setcookie('login', '');
-setcookie('pass_hache', '');
+setcookie('pass_hache', '');*/
 ?>

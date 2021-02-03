@@ -1,5 +1,5 @@
 <?php
-
+/*<style> <?php include 'css\\bootstrap.min.css' ?> </style>*/
 // check auth
 
 require_once "php\\init.php";
