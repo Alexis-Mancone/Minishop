@@ -16,7 +16,7 @@
     }
   ?>
 
-<form action="../management/inscription.php">
+<form action="../management/inscription.php" method='get'>
   <div class="container">
     <h1>Inscription</h1>
     <p>Merci de vous enregistrer pour vous connecter</p>
@@ -54,7 +54,7 @@
     <input type="password" placeholder="Password" name="psw" id="psw" required>
     <hr>
     
-    <button type="submit" class="registerbtn">Inscription</button>
+    <input type="submit" class="registerbtn" value = "Inscription">
     <p>Vous n'avez pas de compte? <a href="?p=login">Connexion</a>.</p>
   </div>
 </form>

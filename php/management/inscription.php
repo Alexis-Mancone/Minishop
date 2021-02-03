@@ -1,10 +1,11 @@
 <?php
 
 require_once "db.php";
+require_once "../init.php"
 
 function handleError($message) {
     $_SESSION['error_message'] = $message;
-    header('Location: signup.php');
+    header('Location: register.php');
     die();
 }
 
@@ -48,7 +49,9 @@ else {
         ':sexe' => $_POST['sex'],
         ':nickname' => $_POST['nickname'],
         ':password_acc' => $pass_hache);
-    $req->execute();
+    $req->fetchAll();
+
+    header('Location: '. __DIR__ .'\\php\\views\\login.php');
 }
  
 ?>
