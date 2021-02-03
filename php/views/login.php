@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="bootstrap.min.css">
-
 
 <html lang="fr">
+<head>
+  <title>Connexion</title>
+  <meta charset="utf-8">
+  <style> <?php include 'css\\style.css' ?> </style>
+  <style> <?php include 'css\\bootstrap.min.css' ?> </style>
+</head>
 
-  <head>
-    <title>Connexion</title>
-    <script src=".js"></script>
-  </head>
-    <body>
-      <form action="/inscription.php">
-        <div class="container">
-          <h1>Connexion</h1>
+  <body>
+    <form action="/connexion.php">
+      <div class="container">
+        <h1>Connexion</h1>
         
-          <hr>
+        <hr>
 
-          <label for="pseudo"><b>Pseudo</b></label>
-          <input type="text" placeholder="Enter Pseudo" name="pseudo" id="pseudo" required>
+        <label for="pseudo"><b>Pseudo</b></label>
+        <input type="text" placeholder="Enter Pseudo" name="pseudo" id="pseudo" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-          <hr>
+        <hr>
 
-          <button type="submit" class="registerbtn">Connexion</button>
-          </div>
-      
-          <div class="container signin">
-          <p>Already have an account? <a href="acceuil_inscription.php">Sign in</a>.</p>
+        <button type="submit" class="registerbtn">Connexion</button>
         </div>
-      </form>
-    </body>
+      
+        <div class="container signin">
+        <p>Already have an account? <a href="?p=register">Sign in</a>.</p>
+      </div>
+    </form>
+  </body>
 
 </html>

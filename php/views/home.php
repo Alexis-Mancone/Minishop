@@ -13,7 +13,7 @@
         <input type="search" class="site-search" name="q" aria-label="Search through site content">
         <button class="searchButton">Search</button>
         <button class="chooseWindow" type="button" onclick="window.location.href = ''">Panier</button>
-        <button class="chooseWindow" type="button" onclick="window.location.href = ''">Profil</button>
+        <button class="chooseWindow" type="button" onclick="window.location.href = '?p=login'">Profil</button>
     </div>
 </head>
 

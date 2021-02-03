@@ -1,3 +1,3 @@
 <?php 
-$pages = ['home','login','register'];
+$pages = ['home','login','register','panier'];
 ?>

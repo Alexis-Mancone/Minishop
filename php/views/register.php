@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>inscription</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <style> <?php include 'css\\style.css' ?> </style>
 </head>
+
 <body>
-<form action="/connexion.php">
+<form action="/inscription.php">
   <div class="container">
-    <h1>inscription</h1>
+    <h1>Inscription</h1>
     <p>Merci de vous enregistrer pour vous connecter</p>
     <hr>
 
@@ -28,7 +28,7 @@
   </div>
   
   <div class="container signin">
-    <p>Vous n'avez pas de compte? <a href="acceuil_connexion.php">Connexion</a>.</p>
+    <p>Vous n'avez pas de compte? <a href="?p=login">Connexion</a>.</p>
   </div>
 </form>
 
