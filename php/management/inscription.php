@@ -12,8 +12,14 @@ $url = parse_url($_SERVER['REQUEST_URI']);
 parse_str($url["query"],$result);
 var_dump($result);
 
-if (strcmp(($result['psw']),"") == 0) {
-    handleError("empty password");
+$verif = $bdd->query('SELECT Nickname, Passwordacc, Mail FROM Account WHERE Nickname like "'.$result["nickname"].'"');
+$resultDB = $verif->fetch(PDO::FETCH_ASSOC);
+
+var_dump($resultDB);
+
+if ($resultDB){
+    echo 'Username aldready taken !';
+    handleError("Username already taken.");
 }else {
 // Vérification de la validité des informations
 
@@ -40,5 +46,5 @@ if (strcmp(($result['psw']),"") == 0) {
     echo "envoie réussi";
     header('Location: ../../'.'?p=login');
     die;
-
+}
 ?>
