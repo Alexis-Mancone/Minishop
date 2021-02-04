@@ -34,12 +34,19 @@
         <div class="container-fluid" id="body">
             <div class="row" id="body2">
                 <!-- corps de la page -->
-                <div id="corps" class="col-sm-12">
                     <div id="soldes2" class="row">
-                        <div id="pourcent" class="col-sm-3">- 20%</div>
-                        <div id="pourcent" class="col-sm-3">- 40%</div>
-                        <div id="pourcent" class="col-sm-3">- 50%</div>
-                        <div id="pourcent" class="col-sm-3">- 50%</div>
+                        <div class="col-sm-3">
+                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
+                        </div>
                     </div>
                     <div id="soldes2" class="row">
                         <div id="pourcent" class="col-sm-3">- 20%</div>
@@ -51,7 +58,6 @@
                         <div id="pourcent" class="col-sm-3">- 40%</div>
                         <div id="pourcent" class="col-sm-3">- 50%</div>
                     </div>
-                </div>
             </div>
         </div>
     </body>
