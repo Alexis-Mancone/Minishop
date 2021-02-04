@@ -9,14 +9,6 @@ if (count($_SESSION) == 0){
     header("Location: "."?p=login");
     die;
 }
-/*
-if(isset($_POST['delete'])){
-    $datadelet = $_POST['delete'];
-    $req = $DB->query("DELETE FROM Account WHERE :id_User = id_User",array('id_User' => $datadelet));
-    header('Location: ');
-    $_SESSION['flash']['success'] = "Le compte à été supprimé";
-    exit;
-}*/
 ?>
 <!DOCTYPE html>
 <meta charset="utf-8">

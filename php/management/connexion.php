@@ -16,7 +16,7 @@ var_dump($result);
 //, WHERE A.Nickname = '.$result["nickname"]
 
 //  Récupération du pseudo et de son mdp hashé
-$req = $bdd->query('SELECT A.Nickname, A.Passwordacc, A.Admin FROM Account as A WHERE A.Nickname like "'.$result["nickname"].'"');
+$req = $bdd->query('SELECT A.Nickname, A.Passwordacc, A.Admin, A.id_User FROM Account as A WHERE A.Nickname like "'.$result["nickname"].'"');
 $resultDB = $req->fetch(PDO::FETCH_ASSOC);
 
 var_dump($resultDB);
@@ -29,6 +29,7 @@ else{
     // Comparaison du mdp envoyé via le formulaire avec la base
     $isPasswordCorrect = password_verify($result['psw'], $resultDB['Passwordacc']);
     if ($isPasswordCorrect) {
+        $_SESSION['ID'] = $resultDB['id_User'];
         $_SESSION['Pseudo'] = $resultDB['Nickname'];
         $_SESSION['Admin'] = $resultDB['Admin'];
         

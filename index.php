@@ -16,6 +16,8 @@ if (isset($_GET['p'])) {
 if (isset($_GET['delete'])){
     if (in_array($_GET['delete'],$del)){
         require_once 'php\\management\\'.$_GET['delete'].'.php';
+        header('Location: ?p=login');
+        die;
     }
 }
 
