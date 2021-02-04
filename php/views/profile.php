@@ -6,6 +6,8 @@ if (count($_SESSION) == 0){
     header("Location: "."?p=login");
     die;
 }
+
+
 ?>
 <!DOCTYPE html>
 <meta charset="utf-8">
@@ -30,7 +32,11 @@ if (count($_SESSION) == 0){
             \" href='?delete=delAccount'"?>>Supprimer mon compte</button>
           <br>
           <button id="retour" type="submit" class="registerbtn" onclick="window.location.href='?p=home'">Retour</button>
-
+          <?php
+            if(strcmp($_SESSION['Admin'],'True')==0){
+              echo '<button id="adminbtn" type="submit" class="adminbtn">Retour</button>';
+            }
+          ?>
         </div>
       </form>
             
