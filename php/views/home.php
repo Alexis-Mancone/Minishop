@@ -33,22 +33,8 @@
          <!-- menu -->
         <div class="container" id="body">
             <div class="row" id="body2">
-                <div id="menu2" class="col-sm-2">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a id="menu3" class="nav-link" href="#">Pulls</a>
-                        </li>
-                        <li class="nav-item">
-                        <a id="menu3" class="nav-link" href="#">T-shirt</a>
-                        </li>
-                        <li class="nav-item">
-                        <a id="menu3" class="nav-link" href="#">Accessoires</a>
-                        </li>
-                    </ul>
-                </div>
-
                 <!-- corps de la page -->
-                <div id="corps" class="col-sm-9">
+                <div id="corps" class="col-sm-12">
                     <div id="soldes2" class="row">
                         <div id="pourcent" class="col-sm-4">- 20%</div>
                         <div id="pourcent" class="col-sm-3">- 40%</div>
