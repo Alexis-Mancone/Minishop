@@ -3,7 +3,7 @@
 <meta charset="utf-8"/>
 <?php require_once "php/init.php";?>
 <style> <?php include 'css\\style.css' ?> </style>
-
+<style> <?php include 'css\\bootstrap.css' ?> </style>
 <title>Minishop</title>
 
 <head>
