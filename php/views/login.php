@@ -10,29 +10,30 @@
 </head>
 
   <body>
-    <?php 
-      if (isset($_SESSION['error_message'])) {
-    ?>
-        <div><?php echo $_SESSION['error_message']; ?></div>
-    <?php
-        unset($_SESSION['error_message']);
-      }
-    ?>
-    <form action="../management/connexion.php">
+
+    <form action="php/management/connexion.php">
       <div class="container">
         <h1>Connexion</h1>
         <hr>
 
-        <label for="pseudo"><b>Pseudo</b></label>
-        <input type="text" placeholder="Enter Pseudo" name="pseudo" id="pseudo" required>
+        <label class ="data" for="nickname"><b>Nickname</b></label>
+        <input class ="inputData" type="text" placeholder="Enter Nickname" name="nickname" id="nickname" required>
         <hr>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <label class ="data" for="psw"><b>Password</b></label>
+        <input class ="inputData" type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
         <hr>
+        <?php 
+          if (isset($_SESSION['error_message'])) {
+        ?>
+            <div><?php echo $_SESSION['error_message']; ?></div>
+        <?php
+            unset($_SESSION['error_message']);
+          }
+        ?>
 
-        <button type="submit" class="registerbtn">Connexion</button>
+        <input type="submit" class="registerbtn" value = "Connexion">
         <p>Already have an account? <a href="?p=register">Sign in</a>.</p>
       </div>
     </form>

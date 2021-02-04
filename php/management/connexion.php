@@ -1,38 +1,43 @@
 <?php
 
+require_once "db.php";
+require_once "../init.php";
+
 function handleError($message) {
     $_SESSION['error_message'] = $message;
-    header('Location: signup.php');
+    header('Location: ../../'.'?p=login');
     die();
 }
 
-?>
+$url = parse_url($_SERVER['REQUEST_URI']);
+parse_str($url["query"],$result);
+var_dump($result);
 
-<?php 
+//, WHERE A.Nickname = '.$result["nickname"]
 
 //  Récupération du pseudo et de son mdp hashé
-$req = $bdd->prepare('SELECT A.Pseudo, A.Password, FROM Account as A WHERE Pseudo = :pseudo');
-$req->execute(array(
-    'pseudo' => $pseudo));
-$resultat = $req->fetch();
+$req = $bdd->query('SELECT Nickname, Passwordacc, Mail FROM Account WHERE Nickname like "'.$result["nickname"].'"');
+$resultDB = $req->fetch(PDO::FETCH_ASSOC);
 
-// Comparaison du mdp envoyé via le formulaire avec la base
-$isPasswordCorrect = password_verify($_POST['Password'], $resultat['Password']);
+var_dump($resultDB);
 
-if (!$resultat)
-{
-    echo 'Bad username or password !';
+if (!$resultDB){
+    echo 'Bad username !';
+    handleError("Wrong Username");
 }
-else
-{
+else{
+    // Comparaison du mdp envoyé via le formulaire avec la base
+    $isPasswordCorrect = password_verify($result['psw'], $resultDB['Passwordacc']);
     if ($isPasswordCorrect) {
-        session_start();
-        $_SESSION['A.Pseudo'] = $resultat['A.Pseudo'];
-        $_SESSION['pseudo'] = $pseudo;
-        echo 'Vous êtes connecté !';
+        $_SESSION['Pseudo'] = $resultDB['Nickname'];
+        $_SESSION['Email'] = $resultDB['Mail'];
+        
+        header('Location: ../../'.'?p=home');
+        die();
     }
     else {
-        echo 'Bad username or password !';
+        echo 'Bad password !';
+        handleError("Wrong Password");
     }
 }
 
