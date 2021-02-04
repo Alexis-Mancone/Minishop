@@ -37,7 +37,7 @@ if(isset($_POST['delete'])){
 
           <button type="submit" class="registerbtn" name="delete" value="delAccount">Supprimer le compte</button>
           <br>
-          <button type="submit" class="registerbtn" onclick="window.location.href = '?p=home'">Retour</button>
+          <button id="retour" type="submit" class="registerbtn" onclick="window.location.href = '?p=home'">Retour</button>
 
         </div>
       </form>

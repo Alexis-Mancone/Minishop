@@ -138,3 +138,9 @@ blockquote{
     background-color: rgb(170, 170, 170);
     color: #181515;
 }
+/* profil.php */
+#retour{
+    margin-top: 3%;
+    width: 40%;
+}
+
