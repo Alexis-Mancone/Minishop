@@ -39,6 +39,7 @@
                         <div id="pourcent" class="col-sm-3">- 20%</div>
                         <div id="pourcent" class="col-sm-3">- 40%</div>
                         <div id="pourcent" class="col-sm-3">- 50%</div>
+                        <div id="pourcent" class="col-sm-3">- 50%</div>
                     </div>
                     <div id="soldes2" class="row">
                         <div id="pourcent" class="col-sm-3">- 20%</div>
