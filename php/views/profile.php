@@ -24,11 +24,12 @@ if (count($_SESSION) == 0){
          
           <button type="submit" class="registerbtn" name="delete" value="logOut">Déconnexion</button>
 
-          <button type="submit" class="registerbtn" name="delete" value="delAccount">Supprimer mon compte</button>
+          <button type="submit" class="registerbtn" <?php echo 
+          "onClick=
+            \"javascript: return confirm('Please confirm deletion');
+            \" href='?delete=delAccount'"?>>Supprimer mon compte</button>
           <br>
-          <button id="retour" type="submit" class="registerbtn" onclick="window.location.href = '?p=home'">Retour</button>
-
-          button
+          <button id="retour" type="submit" class="registerbtn" onclick="window.location.href='?p=home'">Retour</button>
 
         </div>
       </form>
