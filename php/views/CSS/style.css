@@ -106,3 +106,132 @@
     width: 40%;
 }
 
+body{
+    background-color: #888484;
+}
+h1{
+    font-size: 150%;
+}
+/*css home.php*/
+/*head*/
+.navigation{
+    width: auto;
+    height: 10%;
+    background-color:rgb(170, 170, 170);
+    display: flex;
+    flex-direction: line;
+}
+.navigation .site-search{
+    margin-left: 30%;
+}
+/*button home.php*/
+.navigation .searchButton{
+    background-color: #181515;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    padding: 16px 30px;
+    border: solid;
+    cursor: pointer;
+    text-align: center;
+}
+.navigation .searchButton:hover{
+    background-color: rgb(170, 170, 170);
+    color: #181515;
+}
+.navigation .chooseWindow{
+    margin-left: 12%;
+    background-color: #181515;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    padding: 16px 30px;
+    border: solid;
+    cursor: pointer;
+    text-align: center;
+}
+.navigation .chooseWindow:hover{
+    background-color: rgb(170, 170, 170);
+    color: #181515;
+}
+/*Left menu for category*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: -15%;
+    margin-left: 100px;
+    width: 14%;
+    max-width: 400px;   
+}
+.menu .catégorie {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    background-color: #181515;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    padding: 16px 30px;
+    border: solid;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px;
+}
+.menu .catégorie:hover {
+    background-color: rgb(170, 170, 170);
+    color: #181515;
+}
+/*screen*/
+.screen{
+    position: absolute;
+    width: 80%;
+    top: 13%;
+    left: 17%;
+    background-color: #181515;
+    color: rgb(210, 210, 210);
+    font-size: 17px;
+    padding: 10px 10px;
+    border: solid;
+    text-align: center;
+}
+#box{
+    display: flex;
+    flex-flow: row wrap;
+    border: solid;
+    width: 15%;
+}
+blockquote{
+    text-align: center;
+}
+/* admin.php */
+.adminPannel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 85%;
+    width: 14%;
+    max-width: 400px;
+}
+.adminbtn{
+    background-color: #181515;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    padding: 16px 30px;
+    border: solid;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px;
+}
+.adminbtn:hover{
+    background-color: rgb(170, 170, 170);
+    color: #181515;
+}
+.adminScreen{
+    position: absolute;
+    width: 65%;
+    top: 13%;
+    left: 17%;
+    background-color: #181515;
+    color: rgb(210, 210, 210);
+    font-size: 17px;
+    padding: 10px 10px;
+    border: solid;
+    text-align: center;
+}
