@@ -31,7 +31,7 @@
 
 <body>
          <!-- menu -->
-        <div class="container" id="body">
+        <div class="container-fluid" id="body">
             <div class="row" id="body2">
                 <!-- corps de la page -->
                 <div id="corps" class="col-sm-12">
