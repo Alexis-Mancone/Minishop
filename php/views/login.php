@@ -24,7 +24,8 @@
         <input class ="inputData" type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
         <hr>
-        <?php 
+        <?php
+        //If Error from the connexion.php, print the error  
           if (isset($_SESSION['error_message'])) {
         ?>
             <div class="error"><?php echo $_SESSION['error_message']; ?></div>
@@ -34,7 +35,7 @@
         ?>
 
         <input type="submit" class="registerbtn" value = "Connexion">
-        <p>Already have an account? <a href="?p=register">Sign in</a>.</p>
+        <p>Don't Have a account ?<a href="?p=register">Sign in</a>.</p>
       </div>
     </form>
   </body>

@@ -47,6 +47,7 @@
     <hr>
 
     <?php 
+    //If Error from the connexion.php, print the error 
     if (isset($_SESSION['error_message'])) {
     ?>
       <div class="error" ><?php echo $_SESSION['error_message']; ?></div>
@@ -56,7 +57,7 @@
     ?>
     
     <input type="submit" class="registerbtn" value = "Inscription">
-    <p>Vous n'avez pas de compte? <a href="?p=login">Connexion</a>.</p>
+    <p>Already have an account?<a href="?p=login">Connexion</a>.</p>
   </div>
 </form>
 
