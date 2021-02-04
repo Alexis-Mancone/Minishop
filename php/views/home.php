@@ -35,30 +35,16 @@
             <div class="row" id="body2">
                 <!-- corps de la page -->
                     <div id="soldes2" class="row">
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
-                        <div class="col-sm-3">
-                            <img id="myImg" src="#" alt="Snow" style="width:100%;max-width:300px">
-                        </div>
+                        <?php
+                            $req = $bdd->query("SELECT A.Image From Article as A");
+                            $result = $req->fetchall(PDO::FETCH_ASSOC);
+
+                            for($i=0; $i<count($result); $i++){
+                                echo '<div class="col-sm-3">
+                                    <img id="myImg" src="'.$result[$i]["Image"].'" alt="Snow" style="width:100%;max-width:300px">
+                                    </div>';
+                            }
+                        ?>
                     </div>
                     
             </div>

@@ -31,13 +31,16 @@ if (count($_SESSION) == 0){
             \"javascript: return confirm('Please confirm deletion');
             \" href='?delete=delAccount'"?>>Supprimer mon compte</button>
           <br>
-          <button id="retour" type="submit" class="registerbtn" onclick="window.location.href='?p=home'">Retour</button>
+          <button id="retour" type="submit" class="registerbtn" href='?p=home'>Retour</button>
+        </div>
+        <div class="buttonAdmin">
           <?php
+          //onclick="window.location.
             if(strcmp($_SESSION['Admin'],'True')==0){
-              echo '<button id="adminbtn" type="submit" class="adminbtn" onclick="window.location.href=\'?p=admin\'">Admin</button>';
+              echo '<button id="accessAdmin" type="submit" class="accessAdmin" name="p" value="admin">Admin</button>';
             }
           ?>
-        </div>
+          </div>
       </form>
             
     </body>

@@ -30,8 +30,8 @@ if ($resultDB){
 // Insertion
     
     $req = $bdd->prepare('INSERT INTO Account (
-        Nameacc, first_Name, Adress, Phone, Mail, Passwordacc, Sexe,  Date_creation, Nickname
-        ) VALUES(:name_acc, :first_name, :adress, :phone, :mail, :password_acc, :sexe, CURDATE(), :nickname)');
+        Nameacc, first_Name, Adress, Phone, Mail, Passwordacc, Sexe,  Date_creation, Nickname, _Admin
+        ) VALUES(:name_acc, :first_name, :adress, :phone, :mail, :password_acc, :sexe, CURDATE(), :nickname, False)');
     $req->bindValue(':name_acc' , $result["name"]);
     $req->bindValue(':first_name' , $result["firstname"]);
     $req->bindValue(':adress' , $result["adress"]);
