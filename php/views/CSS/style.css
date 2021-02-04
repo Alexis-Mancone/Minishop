@@ -54,7 +54,7 @@
     margin: 0.5%;
 }
 /*css sign in/log in*/
-.container{
+#container{
     position: absolute;
     width: 25%;
     top: 30%;

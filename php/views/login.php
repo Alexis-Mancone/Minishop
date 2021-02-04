@@ -12,7 +12,7 @@
   <body>
 
     <form action="php/management/connexion.php">
-      <div class="container">
+      <div id="container" class="container">
         <h1>Connexion</h1>
         <hr>
 

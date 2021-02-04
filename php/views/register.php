@@ -9,7 +9,7 @@
 <body>
 
 <form action= "php/management/inscription.php">
-  <div class="container">
+  <div id="container" class="container">
     <h1>Inscription</h1>
     <p>Merci de vous enregistrer pour vous connecter</p>
     <hr>
