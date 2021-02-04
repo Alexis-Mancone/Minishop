@@ -32,20 +32,9 @@ html,body,#body,#body2{
 #menu3:hover{
     color: gray;
 }
-
-#corps{
-    margin-top: 10%;
-    background-color: black;
-    text-align: center;
-}
-#soldes{
-    text-align: center;
-    color: white;
-    padding: 5%;
-    margin-left: 2%;
-}
 #soldes2{
     text-align: center;
+    margin-top: 5%;
     padding: 5%;
     margin-left: 2%;
 }
