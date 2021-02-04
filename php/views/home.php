@@ -36,7 +36,7 @@
                 <!-- corps de la page -->
                     <div id="soldes2" class="row">
                         <?php
-                            $req = $bdd->query("SELECT A.Image From Article as A");
+                            $req = $bdd->query("SELECT A.Image From Article as A GROUP BY A.Type");
                             $result = $req->fetchall(PDO::FETCH_ASSOC);
 
                             for($i=0; $i<count($result); $i++){
