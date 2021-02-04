@@ -24,17 +24,14 @@ if (count($_SESSION) == 0){
          
           <button type="submit" class="registerbtn" name="delete" value="logOut">Déconnexion</button>
 
-          <button type="submit" class="registerbtn" name="delete" value="delAccount" onclick="deleteAccount()">Supprimer mon compte</button>
+          <button type="submit" class="registerbtn" name="delete" value="delAccount">Supprimer mon compte</button>
           <br>
           <button id="retour" type="submit" class="registerbtn" onclick="window.location.href = '?p=home'">Retour</button>
 
+          button
+
         </div>
       </form>
-      <script>
-        function deleteAccount() {
-          alert("Cliquez sur OK pour supprimer votre compte");
-        }
-      </script>
             
     </body>
 
