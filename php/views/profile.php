@@ -34,7 +34,7 @@ if (count($_SESSION) == 0){
           <button id="retour" type="submit" class="registerbtn" onclick="window.location.href='?p=home'">Retour</button>
           <?php
             if(strcmp($_SESSION['Admin'],'True')==0){
-              echo '<button id="adminbtn" type="submit" class="adminbtn">Retour</button>';
+              echo '<button id="adminbtn" type="submit" class="adminbtn" onclick="window.location.href=\'?p=admin\'">Admin</button>';
             }
           ?>
         </div>

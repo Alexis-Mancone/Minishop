@@ -1,4 +1,4 @@
-html,body,#body,#body2{
+body,#body,#body2{
     background-color: rgb(210, 210, 210);
 }
 /* home */
@@ -96,6 +96,25 @@ html,body,#body,#body2{
 #retour{
     margin-top: 3%;
     width: 40%;
+}
+.buttonAdmin{
+    display: flex;
+    margin-left: 44%;
+    margin-top: 30%;
+}
+.accessAdmin{
+    background-color: #181515;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    padding: 16px 30px;
+    border: solid;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px;
+}
+.accessAdmin:hover{
+    background-color: rgb(170, 170, 170);
+    color: #181515;
 }
 
 body{
