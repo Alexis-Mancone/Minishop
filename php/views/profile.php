@@ -2,10 +2,7 @@
 
 require_once "php/init.php";
 
-var_dump($_SESSION);
-
 if (count($_SESSION) == 0){
-    echo "oui";
     header("Location: "."?p=login");
     die;
 }

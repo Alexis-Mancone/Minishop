@@ -31,8 +31,8 @@
 
 <body>
          <!-- menu -->
-        <div class="container">
-            <div class="row">
+        <div class="container" id="body">
+            <div class="row" id="body2">
                 <div id="menu2" class="col-sm-2">
                     <ul class="navbar-nav">
                         <li class="nav-item">
