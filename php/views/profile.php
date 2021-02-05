@@ -7,21 +7,11 @@ if (count($_SESSION) == 0){
 }
 ?>
 <!DOCTYPE html>
-
-
-  <head>
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Profil</title>
-    <meta charset="utf-8">
-    <html lang="fr">
-  </head>
     <body>
       <form>
         <div id="container" class="container">
           <h1>Profil</h1>
-
-          <hr>
-         
+          <hr>  
           <button type="submit" class="registerbtn" name="delete" value="logOut">Déconnexion</button>
 
           <button type="submit" class="registerbtn" <?php echo 

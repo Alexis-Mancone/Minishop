@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 
-<head>
-    <html lang="fr">
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
-    <title>Minishop</title>
-</head>
-
 <body> 
     <header>
         <!--head avec barre de recherche, bouton de panier et de profil-->

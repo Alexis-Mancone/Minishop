@@ -25,5 +25,9 @@ if (isset($_GET['delete'])){
     }
 }
 
+require_once 'php\\partials\\header.php';
+
+partials_header($page);
+
 require_once 'php\\views\\' . $page . '.php';
 ?>
