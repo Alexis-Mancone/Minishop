@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 
 <?php require_once "php/init.php";?>
-
-<style> <?php //include 'css\\style.css' ?> </style>
-<style> <?php //include 'css\\bootstrap.min.css' ?> </style>
 <head>
     <html lang="fr">
     <meta charset="utf-8"/>
@@ -21,7 +18,7 @@
                 
                     <ul class="navbar-nav">
                     <li id="link1" class="nav-item">
-                        <a id="menu" class="nav-link" href="#">MINISHOP</a>
+                        <a id="menu" class="nav-link" href="?p=home">MINISHOP</a>
                     </li>
                     <li id="link2" class="nav-item">
                         <a id="menu" class="nav-link" onclick="window.location.href = '?p=profile'">Profil</a>

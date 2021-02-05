@@ -246,14 +246,14 @@ blockquote{
     border: solid;
     text-align: center;
 }
-/*item.php*/
+/*item.php
 #imgArticle{
     margin-top: 2%;
     margin-left: 2%;
 }
-.articleInfo{
+#articleInfo{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 400px;
 }
 #box{
@@ -269,4 +269,8 @@ blockquote{
 }
 blockquote{
     text-align: left;
+    color: white;
+}*/
+.container {
+    margin-top: 2%;
 }
