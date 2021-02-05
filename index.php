@@ -25,8 +25,9 @@ if (isset($_GET['delete'])){
         die;
     }
 }
-
-partials_header($page);
+if (strcmp($page,'admin') !== 0){
+    partials_header($page);
+}
 
 require_once 'php\\views\\' . $page . '.php';
 ?>

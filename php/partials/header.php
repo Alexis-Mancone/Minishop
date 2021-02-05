@@ -9,7 +9,6 @@ function partials_header($page) {
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <title><?php echo ucfirst($page); ?></title>
 </head>
-</head>
 
 <body>
 <header>
