@@ -7,7 +7,6 @@
   <?php require_once "php/init.php";?>
   <html lang="fr">
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
   
 </head>
 

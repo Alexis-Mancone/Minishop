@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>inscription</title>
-  <style> <?php include 'css\\style.css' ?> </style>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>

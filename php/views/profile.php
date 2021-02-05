@@ -1,21 +1,19 @@
 <?php
-
 require_once "php/init.php";
 
 if (count($_SESSION) == 0){
     header("Location: "."?p=login");
     die;
 }
-
-
 ?>
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style> <?php include 'css\\style.css' ?> </style>
-<html lang="fr">
+
 
   <head>
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Profil</title>
+    <meta charset="utf-8">
+    <html lang="fr">
   </head>
     <body>
       <form>
