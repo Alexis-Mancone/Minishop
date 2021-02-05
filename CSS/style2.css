@@ -1,0 +1,25 @@
+/*Css for Article*/
+#imgArticle{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+#articleInfo{
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+}
+#box{
+    position: absolute;
+    width: 75%;
+    top: 10%;
+    left: 24%;
+    background-color: #303030;
+    color: rgb(210, 210, 210);
+    font-size: 17px;
+    padding: 10px 10px;
+    border: solid;
+}
+blockquote{
+    text-align: left;
+    color: white;
+}
