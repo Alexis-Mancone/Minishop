@@ -41,10 +41,10 @@ $result = $req->fetch(PDO::FETCH_ASSOC);
                 <!--code pour div central-->
                     <object id="box">
                         <blockquote>
-                            '.$result["Type"].' Taille
-                            '.$result["Size"].'
-                            '.$result["Color"].'<br>
-                            '.$result["Description"].' <br>
+                            '.$result["Type"].' Taille <br><br>
+                            '.$result["Size"].' <br><br>
+                            '.$result["Color"].'<br><br>
+                            '.$result["Description"].' <br><br>
                             '.$result["Price"].' €
                         </blockquote>
                     </object>
