@@ -44,7 +44,7 @@
 
                             for($i=0; $i<count($result); $i++){
                                 echo '<div class="col-sm-3">
-                                    <a href="?p=item%id='.$result[$i]["id_Article"].'">
+                                    <a href="?p=item&id='.$result[$i]["id_Article"].'">
                                     <img id="myImg" src="'.$result[$i]["Image"].'" alt="img" style="width:100%;max-width:300px"></a>
                                     </div>';
                             }
