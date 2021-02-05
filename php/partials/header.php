@@ -23,10 +23,10 @@ function partials_header($page) {
                         <a id="menu" class="nav-link" href="?p=home">MINISHOP</a>
                     </li>
                     <li id="link2" class="nav-item">
-                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=profile'">Profil</a>
+                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=command'">Cart</a>
                     </li>
                     <li id="link4" class="nav-item">
-                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=command'">Command</a>
+                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=profile'">Profil</a>
                     </li>
                     </ul>
                 </nav>
