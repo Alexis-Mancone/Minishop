@@ -26,7 +26,7 @@ function partials_header($page) {
                         <a id="menu" class="nav-link" onclick="window.location.href = '?p=profile'">Profil</a>
                     </li>
                     <li id="link4" class="nav-item">
-                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=panier'">Panier</a>
+                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=command'">Command</a>
                     </li>
                     </ul>
                 </nav>
