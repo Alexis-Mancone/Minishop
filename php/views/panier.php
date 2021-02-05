@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-
+<meta charset="utf-8">
+<style> <?php include 'css\\style.css' ?> </style>
 <html lang="fr">
 
   <head>
-    <meta charset="utf-8">  
-    <?php require_once "php/init.php";?>
-    <style> <?php include 'css\\style.css' ?> </style>
     <title>Panier</title>
   </head>
-
     <body>
       <form action="/.php">
-        <div class="container">
+        <div class="command">
           <h1>Panier</h1>
         
           <hr>
 
-            <label for="pseudo"><b>Articles</b>
-                <a>Pantalon</a>
-                <a>Chaussette</a>
-                <a>Pull</a>
-                <a>T-shirt</a>
+            <label for="pseudo"><b>Articles :</b>
+              <hr>
+              <a>Pantalon</a>
+              <a class="prix">X€</a>
+              <hr>
+              <a>Chaussette</a>
+              <a class="prix">X€</a>
+              <hr>
+              <a>Pull</a>
+              <a class="prix">X€</a>
+              <hr>
+              <a>T-shirt</a>
+              <a class="prix">X€</a>
             </label>
 
           <hr>
 
           <label for="pseudo"><b>TOTAL</b>
             <a>25 euros</a>
-        </label>
+          </label>
 
-          <button type="submit" class="registerbtn">Paiement</button>
+          <button type="submit" class="registerbtn">Paiement CB</button>
+          <button type="submit" class="registerbtn">Paiement PayPal</button>
+
           </div>
       
-          <div class="container signin">
         </div>
       </form>
     </body>
