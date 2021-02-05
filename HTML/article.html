@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../CSS/bootstrap.min.css"> 
+<title>Minishop</title>
+
+
+
+<body>
+    <header>
+        <!--head avec barre de recherche, bouton de panier et de profil-->
+        <div id="navbar" class="container-fluid">
+            <nav class="navbar navbar-expand-sm">
+        
+                <ul class="navbar-nav">
+                    <li id="link1" class="nav-item">
+                        <a id="menu" class="nav-link" href="#">MINISHOP</a>
+                    </li>
+                    <li id="link2" class="nav-item">
+                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=profile'">Profil</a>
+                    </li>
+                    <li id="link4" class="nav-item">
+                        <a id="menu" class="nav-link" onclick="window.location.href = '?p=panier'">Panier</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img id="imgArticle" src="https://img01.ztat.net/article/spp-media-p1/a1be8042676d335c8a20726df3bef189/d12ebe09efa04f04b031bcf9f47fd4ce.jpg?imwidth=1800" alt="img" style="width:100%;max-width:300px">
+    <div class="aricleInfo">
+        <!--code pour div central-->
+        <object id="box">
+            <blockquote>
+                nom du produit<br><br>
+                prix €
+            </blockquote>
+        </object>
+    </div>
+</body>
+
+
+</html>
