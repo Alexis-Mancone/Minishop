@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
-<meta charset="utf-8"/>
-<style> <?php include 'css\\style.css' ?> </style>
-<title>Minishop</title>
 
 <head>
-    <!--head avec barre de recherche, bouton de panier et de profil-->
-    <div class="navigation">
-        <h1>Minishop</h1>
-        <input type="search" class="site-search" name="q" aria-label="Search through site content">
-        <button class="searchButton">Search</button>
-        <button class="chooseWindow" type="button" onclick="window.location.href = '?p=panier'">Panier</button>
-        <button class="chooseWindow" type="button" onclick="window.location.href = '?p=profile'">Profil</button>
-    </div>
+    <html lang="fr">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
+    <title>Minishop</title>
 </head>
 
 <body> 
+    <header>
+        <!--head avec barre de recherche, bouton de panier et de profil-->
+        <div class="navigation">
+            <h1>Minishop</h1>
+            <input type="search" class="site-search" name="q" aria-label="Search through site content">
+            <button class="searchButton">Search</button>
+            <button class="chooseWindow" type="button" onclick="window.location.href = '?p=panier'">Panier</button>
+            <button class="chooseWindow" type="button" onclick="window.location.href = '?p=profile'">Profil</button>
+        </div>
+    </header>
     <div class="adminPannel">
         <button class="adminbtn" id="ajout">Ajout</button>
         <button class="adminbtn" id="modification">Modification</button>

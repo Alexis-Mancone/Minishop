@@ -26,5 +26,6 @@ if (isset($_GET['delete'])){
 }
 
 require_once 'php\\views\\' . $page . '.php';
+var_dump($_GET['p']);
 
 ?>

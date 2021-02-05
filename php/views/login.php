@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+
 <head>
   <title>Connexion</title>
   <meta charset="utf-8">
   <?php require_once "php/init.php";?>
-  <style> <?php include 'css\\style.css' ?> </style>
+  <html lang="fr">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
   
 </head>
 

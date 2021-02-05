@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style> <?php include 'css\\style.css' ?> </style>
-<html lang="fr">
-
   <head>
+    <meta charset="utf-8">
+    <html lang="fr">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"> 
     <title>Panier</title>
   </head>
+
     <body>
       <form action="/.php">
         <div class="command">
