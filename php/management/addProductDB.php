@@ -24,7 +24,7 @@ if ($resultDB){
     handleError("Username already taken.");
 }else {
 // Insertion 
-    $req = $bdd->prepare('INSERT INTO Account (
+    $req = $bdd->prepare('INSERT INTO Article (
         Type, Size, Color, Price, Description, Image
         ) VALUES(:type, :size, :color, :price, :desc, :image)');
     $req->bindValue(':type' , $result["type"]);
